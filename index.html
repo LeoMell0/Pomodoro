@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro!</title>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./src/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="controls">
+      <div>
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div class="timerButtons">
+        <button id="toggleRunning" data-action="toggleRunning" class="play ph1 ph ph-play"></button>
+        <button id="pause" data-action="toggleRunning" class="pause ph1 ph ph-pause hide"></button>
+        <button id="stop" data-action="reset" class="stop ph1 ph ph-stop"></button>
+        <button id="increase" data-action="increase" class="increase ph1 ph ph-plus-circle"></button>
+        <button id="decrease" data-action="decrease" class="decrease ph1 ph ph-minus-circle"></button>
+      </div>
+    </section>
+
+    <section class="songs">
+      <button class="forest ph2 ph ph-tree"></button>
+      <button class="fire ph2 ph ph-fire-simple"></button>
+      <button class="rain ph2 ph ph-cloud-rain"></button>
+      <button class="coffee ph2 ph ph-coffee"></button>
+    </section>
+  </div>
+</body>
+
+</html>
